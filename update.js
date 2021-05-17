@@ -38,4 +38,4 @@ function updateright(tempconv, tempUnit1, tempUnit2, model){
         rightUnit: tempUnit1
     }
 }
-module.exports = {updateleft, updateright, convert}
+module.exports = {updateleft, updateright}

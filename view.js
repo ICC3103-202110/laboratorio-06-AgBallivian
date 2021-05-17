@@ -5,7 +5,7 @@ function temptitle(){
     return chalk.blue(
         figlet.textSync('Unit Converter App', 
             {
-            horizontalLayout: 'full', font: 'banner'
+            horizontalLayout: 'full', font: 'colossal'
             }
         )
     )

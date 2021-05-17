@@ -19,7 +19,6 @@ async function app(state, update, view){
 
         //Update
         if(source['source'] == 'left'){
-            console.log("ENTRY IF ")
             const updatedModel = updateleft(tempconv['leftValue'], tempconv['leftUnit'], tempconv['rightUnit'])
             state = {
                 ...state, 
@@ -28,7 +27,6 @@ async function app(state, update, view){
             }
         }
         else if(source['source'] == 'right'){
-            console.log("ENTRY ELSE IF ")
             const updatedModel = updateright(tempconv['rightValue'], tempconv['rightUnit'], tempconv['leftUnit'])
             state = {
                 ...state, 

@@ -1,21 +1,21 @@
 function convert(tempconv, tempUnit1, tempUnit2){
     if(tempUnit1 == 'Fahrenheit'){
         //Fahrenheit To ...
-        if(tempUnit2 == 'Celsius') {return (tempconv-32)*5/9}
-        else if(tempUnit2 == 'Kelvin') {return (tempconv-32)*5/9 + 273.15}
-        else {return tempconv}
+        if(tempUnit2 == 'Celsius') {return (Number(tempconv)-32)*5/9}
+        else if(tempUnit2 == 'Kelvin') {return (Number(tempconv)-32)*5/9 + 273.15}
+        else {return Number(tempconv)}
     }
     else if(tempUnit1 == 'Celsius'){
         //Celsius To ...
-        if(tempUnit2 == 'Fahrenheit') {return (tempconv*9/5)+32}
-        else if(tempUnit2 == 'Kelvin') {return tempconv + 273.15}
-        else {return tempconv}
+        if(tempUnit2 == 'Fahrenheit') {return (Number(tempconv)*9/5)+32}
+        else if(tempUnit2 == 'Kelvin') {return Number(tempconv) + 273.15}
+        else {return Number(tempconv)}
     }
     else if(tempUnit1 == 'Kelvin'){
         //Kelvin To ...
-        if(tempUnit2 == 'Fahrenheit') {return (tempconv*9 - 273.15)*9/5 + 32}
-        else if(tempUnit2 == 'Celsius') {return tempconv - 273.15}
-        else {return tempconv}
+        if(tempUnit2 == 'Fahrenheit') {return (Number(tempconv)*9 - 273.15)*9/5 + 32}
+        else if(tempUnit2 == 'Celsius') {return Number(tempconv) - 273.15}
+        else {return Number(tempconv)}
     }
 }
 

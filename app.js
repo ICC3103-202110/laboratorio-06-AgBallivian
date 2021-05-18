@@ -3,7 +3,7 @@ const {printTable} = require('console-table-printer')
 const {updateleft, updateright} = require('./update')
 const {sourceinput, convinput} = require('./view')
 
-async function app(state, update, view){
+async function app(state, updateleft, updateright, view){
     while(true){
         const {model, currentView} = state
         const {title, table} = currentView
